@@ -1,4 +1,51 @@
-body{
+header{
+    position: fixed;
+    height: 56px;
+    width: 100%;
+    background: rgba(148, 207, 138, 0.856);
+    backdrop-filter: blur(10px);
+}
+/*Barra de navegación*/
+.container{
+    padding: 0 25px;
+    height: 56px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+.name_portafolio{
+    color: rgb(251, 255, 227);
+    font-weight: 600;
+    font-style: normal;
+    font-size: 25px;
+}
+.nav_bar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: rgb(251, 255, 227);
+    gap: 10px;
+}
+.link_button{
+    height: 56px;
+    width: 90px;
+    text-decoration: none;
+    color: inherit;
+    padding: 0 5px;
+    font-size: 18px;
+    font-weight: 550;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link_button:hover{
+    background-color: rgba(131, 189, 121, 0.911);
+    color: white
+}
+html, body{
     background-color: rgb(230, 252, 212);
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
@@ -9,10 +56,22 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
 }
+main{
+    flex: 1;
+}
+/*Presentacion*/
 .presentation{
     text-align: center;
-    padding: 2cm 4cm 1.5cm;
+    padding: 2.8cm 4.1cm 1.5cm;
 }
 .profile_picture{
     border-radius: 50%;
@@ -22,7 +81,17 @@ body{
 }
 h1{
     font-size: 35px;
+    font-weight: 600;
 }
+.rectangle{
+    background-color: rgba(131, 192, 121, 0.63);
+    height: 4px;
+    width: 50%;
+    border-radius: 10px;
+    margin: 0 auto;
+    align-items: center;
+}
+/*Cuerpo*/
 .about-me{
     display: flex;
     flex-direction: row;
@@ -32,19 +101,28 @@ h1{
     gap: 20px;
     text-align: left;
     background-color: rgb(247, 255, 240);
-    padding: 0 1.5cm;
+    padding: 1cm 1.4cm;
 }
 .Column-1{
     flex: 0 3 300px;
-    padding: 10px
+    padding: 10px;
+    background-color: rgba(88, 148, 79, 0.856);
+    border-radius: 10px;
+    color: white
 }
 .Column-2{
     flex: 3 0 300px;
-    padding: 10px
+    padding: 10px;
+    background-color: rgba(88, 148, 79, 0.856);
+    border-radius: 10px;
+    color: white
 }
 .Column-3{
     flex: 1 0 300px;
-    padding: 10px
+    padding: 10px;
+    background-color: rgba(88, 148, 79, 0.856);
+    border-radius: 15px;
+    color: white
 }
 h2{
     font-family: "Sour Gummy", sans-serif;
@@ -54,6 +132,107 @@ h2{
     font-variation-settings:
       "wdth" 100;
     text-align: center;
-    color: rgb(88, 148, 79);
     text-decoration: underline;
+    color: white;
+    font-size: 27px;
+    font-weight: 530;
+}
+h3{
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    text-align: left;
+    text-decoration: underline;
+    color: rgb(88, 148, 79);
+    font-size: 27px;
+    font-weight: 530;
+    grid-column: span 2;
+}
+h4{
+    font-weight: bold;
+    font-size: 19px;
+}
+h5{
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 0;
+}
+/*Pie de página*/
+footer{
+    min-height: 70px;
+    width: 100%;
+    background: rgba(148, 207, 138, 0.589);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+}
+.icon:hover{
+    filter: invert(0.2);
+}
+/* Formulario de contacto*/
+.contact-form {
+    background-color: rgb(247, 255, 240);
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 32px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.form_name, .form_email, .form_message {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.contact-form h3 {
+    font-size: 30px;
+    text-align: center;
+}
+.contact-form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(88, 148, 79);
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid rgba(88, 148, 79, 0.856);
+    border-radius: 8px;
+    background-color: rgb(251, 255, 227);
+    color: rgb(88, 148, 79);
+    outline: none;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: rgb(88, 148, 79);
+    box-shadow: 0 0 5px rgba(88, 148, 79, 0.7);
+}
+.contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+.contact-form button {
+    padding: 12px 20px;
+    background-color: rgb(88, 148, 79);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    align-self: center;
+}
+.contact-form button:hover {
+    background-color: rgba(88, 148, 79, 0.856);
 }

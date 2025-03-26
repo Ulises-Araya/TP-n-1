@@ -2,10 +2,10 @@
 <html>
 
     <head>
-        <link rel="stylesheet" href="Hojas de estilos/styles.css">
         <meta charset="utf-8">
-        <title>Portafolio - Nombre Apellido</title>
-            <!--Funete de Google Fonts-->
+        <link rel="stylesheet" href="Hojas de estilos/styles.css">
+        <title>Portafolio - Inés Adam</title>
+            <!--Fuente de Google Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -13,27 +13,34 @@
 
     <body>
         <header>
-
+            <div class="container">
+                <h1 class="name_portafolio">Inés Adam</h1>
+                <nav class="nav_bar">
+                    <a class="link_button" href="index.html">Inicio</a>
+                    <a class="link_button" href="contact.html">Contacto</a>
+                </nav>
+            </div>
         </header>
         
         <main>
             <section class="presentation">
-                <img class="profile_picture" src="Imagenes/Foto.jpg" alt="Foto de perfil"</figuer>
+                <img class="profile_picture" src="Imagenes/Perfil.jpg" alt="Foto de perfil">
                 <h1>Inés Adam</h1>
                 <p>¡Hola! Soy Inés Adam, graduado de Ingeniería en Sistemas de Información en la UTN Facultad Regional San Francisco y apasionado por el desarrollo web y la gestión de bases de datos. Me especializo en React.js, Node.js y SQL/NoSQL, siempre buscando crear soluciones eficientes y escalables.</p>
                 <p>Más allá del código, disfruto explorar nuevas tecnologías, cocinar, tocar la guitarra y perderme en una buena película de ciencia ficción.</p>
             </section>
+            <div class="rectangle"></div>
             <section class="about-me">
                 <div class="Column-1">
                 <h2>Habilidades/Herramientas</h2>
-                    <h3>Desarrollo web:</h3>
+                    <h4>Desarrollo web:</h4>
                     <ul>
                         <li>HTML5, CSS3, JavaScript.</li>
                         <li>Frameworks: React.js, Next.js.</li>
                         <li>Tailwind CSS, Bootstrap.</li>
                         <li>Node.js, Express.</li>
                     </ul>
-                    <h3>Bases de Datos:</h3>
+                    <h4>Bases de Datos:</h4>
                     <ul>
                         <li>MySQL, PostgreSQL, MongoDB.</li>
                         <li>Firebase</li>
@@ -41,15 +48,15 @@
                 </div>
                 <div class="Column-2">
                 <h2>Experiencia laboral</h2>
-                    <h3>Desarrollador Web Full Stack - TechSolutions</h3>
-                    <h4>Buenos Aires, Argentina | 2023</h4>
+                    <h4>Desarrollador Web Full Stack - TechSolutions</h4>
+                    <h5>Buenos Aires, Argentina | 2023</h5>
                     <ul>
                         <li>Desarrollo de aplicaciones web con React.js, Node.js y Express.</li>
                         <li>Diseño y optimización de bases de datos en MySQL y MongoDB.</li>
                         <li>Creación de APIs RESTful y autenticación con JWT.</li>
                     </ul>
-                    <h3>Administrador de Bases de Datos - DataCorp</h3>
-                    <h4>Buenos Aires, Argentina | 2022 - 2023</h4>
+                    <h4>Administrador de Bases de Datos - DataCorp</h4>
+                    <h5>Buenos Aires, Argentina | 2022 - 2023</h5>
                     <ul>
                         <li>Gestión y mantenimiento de bases de datos PostgreSQL y MySQL.</li>
                         <li>Optimización de consultas SQL y seguridad en datos.</li>
@@ -58,13 +65,13 @@
                 </div>
                 <div class="Column-3">
                 <h2>Proyectos realizados</h2>
-                    <h3>Sistema de Gestión de Tareas (2022)</h3>
+                    <h4>Sistema de Gestión de Tareas (2022)</h4>
                     <ul>
                         <li>Aplicación web con React.js y Express.js para organizar tareas diarias.</li>
                         <li>Base de datos en MongoDB, con notificaciones automáticas por email.</li>
                         <li>Diseño responsivo con Tailwind CSS.</li>
                     </ul>
-                    <h3>Dashboard de Análisis de Datos (2023)</h3>
+                    <h4>Dashboard de Análisis de Datos (2023)</h4>
                     <ul>
                         <li>Aplicación web con Next.js y PostgreSQL para visualizar estadísticas en tiempo real.</li>
                         <li>Gráficos dinámicos con Chart.js y D3.js.</li>
@@ -72,22 +79,12 @@
                     </ul>
                 </div>
             </section>
-            <form>
-                <h2>Contacto</h2>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>    
         </main>
 
         <footer>
-            <a href="https://www.linkedin.com/feed/">Linkedin</a>
-            <a href="https://github.com/">GitHub</a>
-            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://www.linkedin.com/feed/" target="_blank"><img class="icon" src="Imagenes/linkedin-brands-solid.svg" alt="LinkedIn"></a>
+            <a href="https://github.com/" target="_blank"><img class="icon" src="Imagenes/github-brands-solid.svg" alt="GitHub"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img class="icon" src="Imagenes/instagram-brands-solid.svg" alt="Instagram"></a>
         </footer>
     </body>
 
